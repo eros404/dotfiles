@@ -82,6 +82,8 @@ else
   export EDITOR='code'
 fi
 
+export GITHUB_USERNAME = "eros404"
+
 eval "$(starship init zsh)"
 
 
