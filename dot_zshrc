@@ -76,10 +76,7 @@ else
   export EDITOR='code'
 fi
 
-export GITHUB_USERNAME="eros404"
-
 eval "$(starship init zsh)"
-
 
 # Set personal aliases, overriding those provided by Oh My Zsh libs,
 # plugins, and themes. Aliases can be placed here, though Oh My Zsh
