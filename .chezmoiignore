@@ -1,0 +1,6 @@
+{{- if hasPrefix "workstation" .chezmoi.hostname }}
+{{- else }}
+Pictures/**/*
+.local/share/fonts/**/*
+.config/tilix/**/*
+{{- end }}
