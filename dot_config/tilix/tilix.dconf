@@ -1,7 +1,5 @@
 [/]
-background-image='~/Pictures/PoE2_Slideshow/PoE2Wallpaper_Graveyard.jpg'
 prompt-on-close-process=false
-window-style='disable-csd-hide-toolbar'
 
 [profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d]
 background-color='#24273A'
@@ -14,7 +12,7 @@ cursor-foreground-color='#24273A'
 cursor-shape='ibeam'
 dim-transparency-percent=0
 draw-margin=80
-font='FiraCode Nerd Font Mono 12'
+font='FiraCode Nerd Font Mono weight=450 12'
 foreground-color='#CAD3F5'
 highlight-background-color='#F4DBD6'
 highlight-colors-set=true
