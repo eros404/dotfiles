@@ -3,4 +3,5 @@
 *.workstation.sh
 .local/share/fonts/**/*
 .config/tilix/**/*
+.config/nvim/**/*
 {{- end }}
