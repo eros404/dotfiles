@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Install ZSH
-if [[ -z $ZSH ]]; then
+if [ -z "$ZSH" ]; then
   sudo dnf install zsh
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 fi
