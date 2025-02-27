@@ -1,11 +1,5 @@
 #!/bin/sh
 
-# Install ZSH
-if [ -z "$ZSH" ]; then
-  sudo dnf install -y zsh
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-fi
-
 # Install Starship
 if ! which starship; then
   sudo dnf copr enable atim/starship
