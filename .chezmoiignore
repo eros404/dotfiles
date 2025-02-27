@@ -1,7 +1,6 @@
 {{- if hasSuffix "workstation" .chezmoi.hostname }}
 {{- else }}
-*.workstation.sh
+**/*.workstation.*
 .local/share/fonts/**/*
 .config/tilix/**/*
-.config/nvim/**/*
 {{- end }}
