@@ -92,6 +92,8 @@ environment {
   XDG_CURRENT_DESKTOP "niri"
   XDG_SESSION_TYPE "wayland"
 	DMS_RUN_GREETER "1"
+	EDITOR "nvim"
+	fish_greeting
 }
 hotkey-overlay {
     skip-at-startup
