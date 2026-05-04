@@ -132,7 +132,6 @@ window-rule {
     match app-id=r#"^gnome-calculator$"#
     match app-id=r#"^galculator$"#
     match app-id=r#"^blueman-manager$"#
-    match app-id=r#"^org\.gnome\.Nautilus$"#
     match app-id=r#"^xdg-desktop-portal$"#
     open-floating true
 }
@@ -152,12 +151,6 @@ window-rule {
 window-rule {
     match app-id=r#"firefox$"# title="^Picture-in-Picture$"
     match app-id="zoom"
-    open-floating true
-}
-// Open dms windows as floating by default
-/-window-rule {
-    match app-id=r#"org.quickshell$"#
-    match app-id=r#"com.danklinux.dms$"#
     open-floating true
 }
 debug {
