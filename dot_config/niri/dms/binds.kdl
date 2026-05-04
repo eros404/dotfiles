@@ -67,7 +67,8 @@ binds {
     XF86Launch1 { screenshot; }
     Mod+Shift+E { quit; }
     Mod+T hotkey-overlay-title="Open Terminal" { spawn "ghostty"; }
-    Super+B hotkey-overlay-title="Open Browser" { spawn "firefox"; }
+    Mod+B hotkey-overlay-title="Open Browser" { spawn "firefox"; }
+		Mod+E hotkey-overlay-title="Open File Explorer" { spawn "nautilus"; }
     Mod+D repeat=false { toggle-overview; }
     Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
     Mod+Shift+Slash { show-hotkey-overlay; }
