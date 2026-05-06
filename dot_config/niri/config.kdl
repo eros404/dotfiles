@@ -94,7 +94,6 @@ environment {
 	ELECTRON_OZONE_PLATFORM_HINT "wayland"
 	DMS_RUN_GREETER "1"
 	EDITOR "nvim"
-	NNN_OPTS "HE"
 }
 hotkey-overlay {
     skip-at-startup
