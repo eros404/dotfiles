@@ -6,11 +6,15 @@ function yse --description 'Search for a package'
     yay -Ss $argv
 end
 
-function yin --description 'Install a package'
+function yin \
+	--wraps 'yay -S' \
+	--description 'Install a package'
     yay -S $argv
 end
 
-function yrm --description 'Remove a package'
+function yrm \
+	--wraps 'yay -Rs' \
+	--description 'Remove a package'
     yay -Rs $argv
 end
 
