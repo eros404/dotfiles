@@ -4,7 +4,7 @@ binds {
     Ctrl+XF86AudioRaiseVolume allow-when-locked=true { spawn "dms" "ipc" "call" "mpris" "increment" "3"; }
     Mod+Alt+L hotkey-overlay-title="Lock Screen" { spawn "dms" "ipc" "call" "lock" "lock"; }
     Mod+Comma hotkey-overlay-title="Settings" { spawn "dms" "ipc" "call" "settings" "focusOrToggle"; }
-    Mod+M hotkey-overlay-title="Task Manager" { spawn "dms" "ipc" "call" "processlist" "focusOrToggle"; }
+    Mod+M hotkey-overlay-title="Task Manager: Focus or Toggle" { spawn "dms" "ipc" "call" "processlist" "focusOrToggle"; }
     Mod+Space hotkey-overlay-title="Application Launcher" { spawn "dms" "ipc" "call" "spotlight" "toggle"; }
     Mod+V hotkey-overlay-title="Clipboard Manager" { spawn "dms" "ipc" "call" "clipboard" "toggle"; }
     Super+N hotkey-overlay-title="Notepad" { spawn "dms" "ipc" "call" "notepad" "toggle"; }
@@ -19,29 +19,30 @@ binds {
     XF86AudioRaiseVolume allow-when-locked=true { spawn "dms" "ipc" "call" "audio" "increment" "3"; }
     XF86MonBrightnessDown allow-when-locked=true { spawn "dms" "ipc" "call" "brightness" "decrement" "5" ""; }
     XF86MonBrightnessUp allow-when-locked=true { spawn "dms" "ipc" "call" "brightness" "increment" "5" ""; }
+    Mod+Ctrl+Down { move-window-down-or-to-workspace-down; }
+    Mod+Ctrl+Up { move-window-up-or-to-workspace-up; }
     Mod+Ctrl+WheelScrollDown cooldown-ms=150 { move-column-to-workspace-down; }
     Mod+Ctrl+WheelScrollUp cooldown-ms=150 { move-column-to-workspace-up; }
+    Mod+Down { focus-window-or-workspace-down; }
     Mod+Page_Down { focus-workspace-down; }
     Mod+Page_Up { focus-workspace-up; }
     Mod+Shift+Page_Down { move-workspace-down; }
     Mod+Shift+Page_Up { move-workspace-up; }
+    Mod+Up { focus-window-or-workspace-up; }
     Mod+WheelScrollDown cooldown-ms=150 { focus-workspace-down; }
     Mod+WheelScrollUp cooldown-ms=150 { focus-workspace-up; }
     Alt+Print { screenshot-window; }
     Alt+XF86Launch1 { screenshot-window; }
     Mod+C { consume-or-expel-window-left; }
-    Mod+Shift+C { consume-or-expel-window-right; }
     Mod+Ctrl+Left { move-column-left-or-to-monitor-left; }
     Mod+Ctrl+Right { move-column-right-or-to-monitor-right; }
-    Mod+Ctrl+Up { move-window-up-or-to-workspace-up; }
-    Mod+Ctrl+Down { move-window-down-or-to-workspace-down; }
-    Mod+Down { focus-window-or-workspace-down; }
     Mod+F { maximize-column; }
     Mod+Left { focus-column-or-monitor-left; }
     Mod+Period { expel-window-from-column; }
     Mod+Q repeat=false { close-window; }
     Mod+R { switch-preset-column-width; }
     Mod+Right { focus-column-or-monitor-right; }
+    Mod+Shift+C { consume-or-expel-window-right; }
     Mod+Shift+Ctrl+Down { move-column-to-monitor-down; }
     Mod+Shift+Ctrl+Left { move-column-to-monitor-left; }
     Mod+Shift+Ctrl+Right { move-column-to-monitor-right; }
@@ -56,7 +57,6 @@ binds {
     Mod+Shift+V { switch-focus-between-floating-and-tiling; }
     Mod+Shift+WheelScrollDown { focus-column-right; }
     Mod+Shift+WheelScrollUp { focus-column-left; }
-    Mod+Up { focus-window-or-workspace-up; }
     Mod+W { toggle-column-tabbed-display; }
     Mod+WheelScrollLeft { focus-column-left; }
     Mod+WheelScrollRight { focus-column-right; }
@@ -66,9 +66,9 @@ binds {
     Print { screenshot; }
     XF86Launch1 { screenshot; }
     Mod+Shift+E { quit; }
-    Mod+T hotkey-overlay-title="Open Terminal" { spawn "ghostty"; }
     Mod+B hotkey-overlay-title="Open Browser" { spawn "firefox"; }
-		Mod+E hotkey-overlay-title="Open File Explorer" { spawn "nautilus"; }
+    Mod+E hotkey-overlay-title="Open File Explorer" { spawn "nautilus"; }
+    Mod+T hotkey-overlay-title="Open Terminal" { spawn "ghostty"; }
     Mod+D repeat=false { toggle-overview; }
     Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
     Mod+Shift+Slash { show-hotkey-overlay; }
