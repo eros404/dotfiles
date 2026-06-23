@@ -36,7 +36,6 @@ hl.config({
 	input = {
 		kb_layout = "fr",
 		numlock_by_default = true,
-		follow_mouse = 0,
 	}
 })
 
