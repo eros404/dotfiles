@@ -8,6 +8,7 @@ hl.env("QT_QPA_PLATFORMTHEME", "gtk3")
 hl.env("QT_QPA_PLATFORMTHEME_QT6", "gtk3")
 
 hl.env("XCURSOR_THEME", "capitaine-cursors")
+hl.env("XCURSOR_SIZE", "32")
 
 hl.config({
 	general = {
@@ -35,8 +36,11 @@ hl.config({
 	input = {
 		kb_layout = "fr",
 		numlock_by_default = true,
+		follow_mouse = 0,
 	}
 })
+
+hl.animation({ leaf = "global", enabled = true, speed = 3, bezier = "default" })
 
 require("monitors")
 require("keybinds")
