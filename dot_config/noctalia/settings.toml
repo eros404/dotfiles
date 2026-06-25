@@ -1,0 +1,69 @@
+[shell]
+polkit_agent = true
+avatar_path = "~/Pictures/face.jpg"
+[shell.panel]
+transparency_mode = "glass"
+[[shell.session.actions]]
+action = "lock"
+enabled = false
+[[shell.session.actions]]
+action = "logout"
+countdown_seconds = 0.0
+enabled = true
+shortcut = "l"
+variant = "default"
+[[shell.session.actions]]
+action = "lock_and_suspend"
+countdown_seconds = 0.0
+enabled = true
+shortcut = "s"
+variant = "default"
+[[shell.session.actions]]
+action = "reboot"
+countdown_seconds = 3.0
+enabled = true
+shortcut = "r"
+variant = "default"
+[[shell.session.actions]]
+action = "shutdown"
+countdown_seconds = 3.0
+enabled = true
+shortcut = "x"
+variant = "destructive"
+
+[notification]
+background_opacity = 0.66
+[osd]
+background_opacity = 0.66
+
+[keybinds]
+validate = ["return", "kp_enter"]
+cancel = ["escape"]
+left = ["left"]
+right = ["right"]
+up = ["up"]
+down = ["down"]
+tab_next = ["tab"]
+tab_previous = ["shift+tab", "iso_left_tab"]
+
+[theme]
+builtin = "Rosé Pine"
+mode = "auto"
+source = "builtin"
+[theme.templates]
+builtin_ids = [ "ghostty", "hyprland" ]
+
+[wallpaper]
+directory = "~/Pictures"
+
+[wallpaper.default]
+path = "~/Pictures/background.jpg"
+
+[nightlight]
+enabled = true
+
+[weather]
+enabled = true
+refresh_minutes = 60
+effects = true
+
