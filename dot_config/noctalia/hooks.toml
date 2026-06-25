@@ -1,0 +1,4 @@
+[hooks]
+started = "gsettings set org.gnome.desktop.interface color-scheme \"prefer-$(noctalia msg theme-mode-get)\""
+theme_mode_changed = "gsettings set org.gnome.desktop.interface color-scheme \"prefer-$NOCTALIA_THEME_MODE\""
+
