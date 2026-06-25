@@ -1,0 +1,55 @@
+[bar.default]
+background_opacity = 0.66
+capsule = true
+capsule_border = "primary"
+center = [ "date", "clock", "weather" ]
+end = [
+    "media",
+    "tray",
+    "notifications",
+    "clipboard",
+    "network",
+    "bluetooth",
+    "volume",
+    "brightness",
+    "battery",
+    "control-center"
+]
+margin_edge = 0
+margin_ends = 0
+position = "left"
+radius = 0
+radius_bottom_right = -12
+radius_top_right = -12
+start = [ "launcher", "workspaces" ]
+
+[widget.control-center]
+color = "primary"
+
+[widget.date]
+capsule = true
+vertical_format = "{:%d%n%b}"
+scale = 0.85
+capsule_padding = 10.0
+
+[widget.clock]
+capsule = true
+capsule_border = "surface"
+capsule_fill = "primary"
+color = "on_primary"
+capsule_padding = 10.0
+
+[widget.media]
+hide_when_no_media = true
+
+[widget.network]
+show_label = false
+
+[widget.volume]
+show_label = false
+
+[widget.weather]
+capsule = true
+capsule_padding = 10.0
+scale = 0.85
+
