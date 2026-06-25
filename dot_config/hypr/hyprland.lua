@@ -1,25 +1,15 @@
-hl.env("XDG_CURRENT_DESKTOP", "Hyprland")
-hl.env("XDG_SESSION_TYPE", "wayland")
-hl.env("XDG_SESSION_DESKTOP", "Hyprland")
-
-hl.env("QT_QPA_PLATFORM", "wayland")
-hl.env("ELECTRON_OZONE_PLATFORM_HINT", "auto")
-hl.env("QT_QPA_PLATFORMTHEME", "gtk3")
-hl.env("QT_QPA_PLATFORMTHEME_QT6", "gtk3")
-
-hl.env("XCURSOR_THEME", "capitaine-cursors")
-hl.env("XCURSOR_SIZE", "32")
-
 hl.config({
 	general = {
-		gaps_in = 0,
-		gaps_out = 0,
+		gaps_in = 3,
+		gaps_out = 6,
 		layout = "scrolling",
-		border_size = 1,
-		col = {
-			active_border = "#ffb77b",
-			inactive_border = "#9e8e82",
-		},
+		border_size = 2,
+	},
+
+	input = {
+		kb_layout = "fr",
+		numlock_by_default = true,
+		follow_mouse = false,
 	},
 
 	scrolling = {
@@ -30,25 +20,37 @@ hl.config({
 		force_default_wallpaper = 0,
 		disable_hyprland_logo = true,
 	},
-})
 
-hl.config({
-	input = {
-		kb_layout = "fr",
-		numlock_by_default = true,
-	}
+	decoration = {
+		rounding = 10,
+  	rounding_power = 2,
+
+		shadow = {
+			enabled = true,
+			range = 4,
+			render_power = 3,
+			color = 0xee1a1a1a,
+		},
+
+		blur = {
+			enabled = true,
+			size = 3,
+			passes = 2,
+			vibrancy = 0.1696,
+    },
+	},
 })
 
 hl.animation({ leaf = "global", enabled = true, speed = 3, bezier = "default" })
 
 require("monitors")
 require("keybinds")
+require("environments")
+require("rules")
 
 hl.on("hyprland.start", function()
-	hl.exec_cmd("systemctl --user start hyprland-session.target")
+	hl.exec_cmd("noctalia")
 end)
 
-hl.on("hyprland.shutdown", function()
-	os.execute("systemctl --user stop hyprland-session.target && sleep 0.1")
-end)
-
+-- For Noctalia Color templates
+require("noctalia").apply_theme()
