@@ -5,7 +5,7 @@ font-size = 12
 window-decoration = false
 window-padding-x = 12
 window-padding-y = 12
-background-opacity = 0.9
+background-opacity = 0.66
 background-blur-radius = 32
 
 # Cursor Configuration
@@ -47,5 +47,4 @@ keybind = shift+enter=text:\n
 # Rando stuff
 gtk-single-instance = true
 
-# Dank color generation
-theme = dankcolors
+theme = noctalia
