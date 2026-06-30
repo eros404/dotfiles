@@ -1,0 +1,57 @@
+[shell]
+polkit_agent = true
+avatar_path = "~/Pictures/face.jpg"
+
+[shell.panel]
+transparency_mode = "glass"
+
+[[shell.session.actions]]
+action = "lock"
+enabled = false
+
+[[shell.session.actions]]
+action = "logout"
+countdown_seconds = 0.0
+enabled = true
+shortcut = "l"
+variant = "default"
+
+[[shell.session.actions]]
+action = "lock_and_suspend"
+countdown_seconds = 0.0
+enabled = true
+shortcut = "s"
+variant = "default"
+
+[[shell.session.actions]]
+action = "reboot"
+countdown_seconds = 3.0
+enabled = false
+shortcut = "r"
+variant = "default"
+
+[[shell.session.actions]]
+action = "shutdown"
+countdown_seconds = 3.0
+enabled = false
+shortcut = "x"
+variant = "destructive"
+
+[[shell.session.actions]]
+action = "command"
+command = "hyprshutdown -t 'Restarting' --post-cmd 'noctalia msg session reboot'"
+countdown_seconds = 3.0
+enabled = true
+label = "Reboot"
+shortcut = "r"
+variant = "default"
+
+[[shell.session.actions]]
+action = "command"
+command = "hyprshutdown -t 'Shutting down' --post-cmd 'noctalia msg session shutdown'"
+countdown_seconds = 3.0
+enabled = true
+label = "Shut Down"
+shortcut = "x"
+variant = "destructive"
+
