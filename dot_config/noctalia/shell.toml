@@ -26,32 +26,14 @@ variant = "default"
 [[shell.session.actions]]
 action = "reboot"
 countdown_seconds = 3.0
-enabled = false
+enabled = true
 shortcut = "r"
 variant = "default"
 
 [[shell.session.actions]]
 action = "shutdown"
 countdown_seconds = 3.0
-enabled = false
-shortcut = "x"
-variant = "destructive"
-
-[[shell.session.actions]]
-action = "command"
-command = "hyprshutdown -t 'Restarting' --post-cmd 'noctalia msg session reboot'"
-countdown_seconds = 3.0
 enabled = true
-label = "Reboot"
-shortcut = "r"
-variant = "default"
-
-[[shell.session.actions]]
-action = "command"
-command = "hyprshutdown -t 'Shutting down' --post-cmd 'noctalia msg session shutdown'"
-countdown_seconds = 3.0
-enabled = true
-label = "Shut Down"
 shortcut = "x"
 variant = "destructive"
 
