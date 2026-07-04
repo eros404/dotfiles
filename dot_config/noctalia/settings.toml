@@ -40,3 +40,20 @@ enabled = true
 refresh_minutes = 60
 effects = true
 
+[desktop_widgets]
+enabled = false
+
+[control_center]
+sidebar = "full"
+[[control_center.shortcuts]]
+type = "wifi"
+[[control_center.shortcuts]]
+type = "bluetooth"
+[[control_center.shortcuts]]
+type = "nightlight"
+[[control_center.shortcuts]]
+type = "dark_mode"
+[[control_center.shortcuts]]
+type = "power_profile"
+[[control_center.shortcuts]]
+type = "caffeine"
