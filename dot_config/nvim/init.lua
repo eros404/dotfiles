@@ -9,6 +9,7 @@ vim.o.signcolumn = 'yes'
 
 vim.opt.clipboard = 'unnamedplus'
 
+
 vim.pack.add({
 	{
 		src = "https://github.com/rose-pine/neovim",
@@ -17,3 +18,5 @@ vim.pack.add({
 })
 require("rose-pine").setup()
 vim.cmd("colorscheme rose-pine")
+
+vim.cmd("highlight Normal guibg=none")
