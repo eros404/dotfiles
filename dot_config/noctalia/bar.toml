@@ -18,8 +18,8 @@ margin_edge = 0
 margin_ends = 0
 position = "left"
 radius = 0
-radius_bottom_right = -12
-radius_top_right = -12
+radius_bottom_right = 12
+radius_top_right = 12
 start = [ "launcher", "workspaces" ]
 
 [widget.control-center]
