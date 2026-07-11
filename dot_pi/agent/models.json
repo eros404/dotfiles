@@ -1,0 +1,16 @@
+{
+  "providers": {
+    "infomaniak": {
+      "baseUrl": "https://api.infomaniak.com/2/ai/109543/openai/v1",
+      "api": "openai-completions",
+      "apiKey": "!secret-tool lookup ik-ai api-key",
+      "models": [
+        {
+					"id": "moonshotai/Kimi-K2.6",
+					"cost": { "input": 0.6, "output": 3, "cacheRead": 0, "cacheWrite": 0 }
+				}
+      ]
+    }
+  }
+}
+
