@@ -10,9 +10,6 @@ hl.config({
 		kb_layout = "fr",
 		numlock_by_default = true,
 		follow_mouse = 1,
-		touchpad = {
-			natural_scroll = true,
-		},
 	},
 
 	scrolling = {
@@ -30,16 +27,20 @@ hl.config({
 
 		shadow = {
 			enabled = true,
-			range = 4,
-			render_power = 3,
-			color = 0xee1a1a1a,
+			range = 12,
+			render_power = 6,
+			color = "rgba(0,0,0,0.19)",
+			offset = { 0, 0 },
+			scale = 1
 		},
 
 		blur = {
 			enabled = true,
 			size = 3,
 			passes = 2,
-			vibrancy = 0.1696,
+			noise = 0.012,
+			contrast = 0.9,
+			new_optimizations = true
     },
 	},
 })
