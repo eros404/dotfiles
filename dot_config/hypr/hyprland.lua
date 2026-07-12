@@ -10,6 +10,9 @@ hl.config({
 		kb_layout = "fr",
 		numlock_by_default = true,
 		follow_mouse = 1,
+		touchpad = {
+			natural_scroll = false,
+		},
 	},
 
 	scrolling = {
