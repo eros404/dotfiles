@@ -1,5 +1,5 @@
 hl.bind("SUPER + t", hl.dsp.exec_cmd("ghostty"))
-hl.bind("SUPER + e", hl.dsp.exec_cmd("nautilus"))
+hl.bind("SUPER + e", hl.dsp.exec_cmd("ghostty -e nnn"))
 hl.bind("SUPER + b", hl.dsp.exec_cmd("flatpak run app.zen_browser.zen"))
 
 hl.bind("SUPER + left", hl.dsp.focus({ direction = "left" }))
