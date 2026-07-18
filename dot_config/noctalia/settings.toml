@@ -24,7 +24,7 @@ mode = "auto"
 source = "builtin"
 [theme.templates]
 builtin_ids = [ "ghostty", "hyprland" ]
-community_ids = [ "pi-agent" ]
+community_ids = [ "pi-agent", "bat" ]
 
 [wallpaper]
 directory = "~/Pictures"
