@@ -3,12 +3,12 @@ hl.monitor({
 	output = "{{ .output }}",
 	mode = "highresxhighrr",
 	scale = 1,
-	{{- if .position }}
+	{{- if hasKey . "position" }}
 	position = "{{ .position }}",
 	{{- end }}
 })
 
-{{- if .dpms }}
+{{- if hasKey . "dpms" }}
 hl.bind("SUPER + {{ .dpms }}", hl.dsp.dpms({ monitor = "{{ .output }}" }))
 {{- end }}
 
