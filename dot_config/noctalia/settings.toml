@@ -44,6 +44,9 @@ effects = true
 [desktop_widgets]
 enabled = false
 
+[battery]
+warning_threshold = 15
+
 [control_center]
 sidebar = "full"
 [[control_center.shortcuts]]

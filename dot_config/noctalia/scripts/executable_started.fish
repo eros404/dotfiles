@@ -1,4 +1,4 @@
-#!/usr/bin/fish
+#!/usr/bin/env fish
 
 set NOCTALIA_THEME_MODE $(noctalia msg theme-mode-get)
 

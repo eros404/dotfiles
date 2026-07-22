@@ -1,4 +1,5 @@
 [hooks]
 started = "~/.config/noctalia/scripts/started.fish"
 theme_mode_changed = "~/.config/noctalia/scripts/theme_mode_changed.fish"
+battery_percentage_changed = "~/.config/noctalia/scripts/battery_percentage_changed.fish"
 
