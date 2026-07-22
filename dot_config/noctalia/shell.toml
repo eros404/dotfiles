@@ -7,7 +7,7 @@ avatar_path = "~/Pictures/face.jpg"
 transparency_mode = "glass"
 
 [shell.greeter_sync]
-auto_sync = true
+auto_sync = false
 
 [[shell.session.actions]]
 action = "lock"
