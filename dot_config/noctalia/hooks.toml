@@ -1,4 +1,4 @@
 [hooks]
-started = "gsettings set org.gnome.desktop.interface color-scheme \"prefer-$(noctalia msg theme-mode-get)\""
-theme_mode_changed = "gsettings set org.gnome.desktop.interface color-scheme \"prefer-$NOCTALIA_THEME_MODE\""
+started = "~/.config/noctalia/scripts/started.fish"
+theme_mode_changed = "~/.config/noctalia/scripts/theme_mode_changed.fish"
 

@@ -1,5 +1,9 @@
+[location]
+address = "Paris, FR"
+
 [notification]
 background_opacity = 0.66
+
 [osd]
 background_opacity = 0.66
 
@@ -28,9 +32,6 @@ community_ids = [ "pi-agent", "bat" ]
 
 [wallpaper]
 directory = "~/Pictures"
-
-[wallpaper.default]
-path = "~/Pictures/background.jpg"
 
 [nightlight]
 enabled = true

@@ -2,12 +2,12 @@
 background_opacity = 0.66
 capsule = true
 capsule_border = "primary"
+start = [ "launcher", "workspaces", "screenshot" ]
 center = [ "date", "clock", "weather" ]
 end = [
     "media",
     "tray",
     "notifications",
-    "clipboard",
     "network",
     "bluetooth",
     "volume",
@@ -20,7 +20,6 @@ position = "left"
 radius = 0
 radius_bottom_right = 12
 radius_top_right = 12
-start = [ "launcher", "workspaces" ]
 
 [widget.control-center]
 color = "primary"

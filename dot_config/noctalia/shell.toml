@@ -1,9 +1,13 @@
 [shell]
+telemetry_enabled = true
 polkit_agent = true
 avatar_path = "~/Pictures/face.jpg"
 
 [shell.panel]
 transparency_mode = "glass"
+
+[shell.greeter_sync]
+auto_sync = true
 
 [[shell.session.actions]]
 action = "lock"
